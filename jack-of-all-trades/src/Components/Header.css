@@ -1,0 +1,19 @@
+.header{
+    display: grid;
+    grid-template-columns: [c1] 25% [c2] 50% [c3] 25% [c4];
+    grid-template-rows: [r1] auto [r2];
+    align-items: center;
+}
+.header-title{
+    grid-column-start: c1;
+    grid-column-end: span c2;
+    padding-left: 3rem;
+}
+.nav-main{
+    grid-column-start: c2;
+    grid-column-end: span c3;
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
