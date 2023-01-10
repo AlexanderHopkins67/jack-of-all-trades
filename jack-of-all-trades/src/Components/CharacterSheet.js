@@ -1,7 +1,8 @@
 import react from "react"
 
 export default function CharacterSheet(props) {
-    <div className="cs-body">
+    return(
+        <div className="cs-body">
         
         <div className="cs-stats">
             
@@ -16,4 +17,4 @@ export default function CharacterSheet(props) {
         
         </div>
     </div>
-}
+)}
