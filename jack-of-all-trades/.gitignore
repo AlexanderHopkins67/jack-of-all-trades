@@ -25,3 +25,4 @@ yarn-error.log*
 # Backend
 backend/env
 backend/__pycache__
+backend/Helpers/__pycache__
