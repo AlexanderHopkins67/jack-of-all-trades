@@ -3,7 +3,7 @@ import CharacterSheet from "../Components/CharacterSheet";
 
 export default function Home() {
     return(
-        <div>
+        <div style={{height: 800}}>
             <CharacterSheet/>
         </div>
     )
