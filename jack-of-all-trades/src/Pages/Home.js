@@ -1,9 +1,10 @@
 import React from "react";
+import CharacterSheet from "../Components/CharacterSheet";
 
 export default function Home() {
     return(
         <div>
-            Home page
+            <CharacterSheet/>
         </div>
     )
 }
