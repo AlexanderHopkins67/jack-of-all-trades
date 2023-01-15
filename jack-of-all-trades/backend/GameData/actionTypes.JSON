@@ -1,0 +1,81 @@
+{
+    "actions" : [
+        {
+            "id": 1,
+            "name": "Attack",
+            "isHostile": true
+        },
+
+        {
+            "id": 2,
+            "name": "Defend",
+            "isHostile": true
+        },
+
+        {
+            "id": 3,
+            "name": "Intimidate",
+            "isHostile": true
+        },
+
+        {
+            "id": 4,
+            "name": "Rejuvenate",
+            "isHostile": true
+        },
+
+        {
+            "id": 5,
+            "name": "Abilities",
+            "isHostile":true
+        },
+
+        {
+            "id": 6,
+            "name": "Move",
+            "isHostile": true
+        },
+
+        {
+            "id":7, 
+            "name": "Move",
+            "isHostile": false
+        },
+
+        {
+            "id": 8,
+            "name": "Explore",
+            "isHostile": false
+        },
+
+        {
+            "id": 9,
+            "name": "Abilities",
+            "isHostile": false
+        },
+
+        {
+            "id": 10,
+            "name": "Train",
+            "isHostile": false
+        },
+
+        {
+            "id": 11,
+            "name": "Chat",
+            "isHostile": false
+        }, 
+
+        {
+            "id": 12,
+            "name": "Rest",
+            "isHostile": false
+        },
+
+        {
+            "id": 13,
+            "name": "Fight",
+            "isHostile": false
+        }
+    ]
+}

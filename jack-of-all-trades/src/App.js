@@ -28,8 +28,9 @@ function App() {
     })
     .then((response) => {
       if (response.data !== null) {
-        sessionStorage.setItem("key", response)
-        setUserCredential(sessionStorage.getItem('key'))
+        console.log(response.data)
+        sessionStorage.setItem("sessionToken", response.data)
+        setUserCredential(sessionStorage.getItem('sessionToken'))
       }
       })
     }

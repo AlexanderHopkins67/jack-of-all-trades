@@ -1,0 +1,25 @@
+{
+    "character" :
+        {
+            "isHostile": true,
+            "gold": 0,
+            "health": 200,
+            "energy": 200,
+            "armour": 0,
+            "evasion": 0,
+            "vim": 0,
+            "vigor": 0,
+            "charm": 0,
+            "wit": 0,
+            "attunement": 0,
+            "statusFx": {
+                "stunned": false,
+                "exhausted": false
+            }
+        }
+    ,
+    "Character2": 
+        {
+            "test": 2
+        }
+}
