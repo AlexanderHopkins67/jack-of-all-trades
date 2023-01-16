@@ -1,6 +1,5 @@
+from enum import unique
 from functools import wraps
-import imp
-from operator import truediv
 from flask import Flask, request
 import json
 import jwt
@@ -11,6 +10,8 @@ from config import SECRET_KEY
 
 
 api = Flask(__name__)
+api.config["SECRET_KEY"] = SECRET_KEY
+
 
 @api.route('/test')
 def test():
@@ -30,7 +31,9 @@ def token_required(f):
         try:
             public_id = jwt.decode(token, SECRET_KEY, algorithms=['HS256'])
             with open ("./GameData/userData.JSON") as users:
-                current_user = users[public_id]
+                userList = json.load(users)
+                if userList["username"]["public_id"] == public_id['public_id']:
+                    current_user = userList["username"]["public_id"]
         except:
             return("Error: Invalid Token")
         return f(current_user, *args, **kwargs)
@@ -101,5 +104,5 @@ def getActionData():
 
 @api.route("/api/authTest", methods=["GET", "POST"])
 @token_required
-def updatePlayerData():
-    return("worked")
+def updatePlayerData(*args, **kwargs):
+    return(request.data)

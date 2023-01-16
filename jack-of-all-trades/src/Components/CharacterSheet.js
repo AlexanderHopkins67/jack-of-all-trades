@@ -7,16 +7,19 @@ export default function CharacterSheet(props) {
     const [playerHealth, setPlayerHealth] = useState(200)
 
     function RandomHealth() {
-        // newVal = Math.floor(Math.random() * 200)
+       const newVal = Math.floor(Math.random() * 200)
         axios({
             method: "POST",
             url: "/api/authTest",
             headers: {
                 'x-access-token': sessionStorage.getItem("sessionToken")
-            }
+            },
+            data: {newVal}
+
         })
         .then((response) => {
             console.log(response)
+            // console.log(sessionStorage.getItem("sessionToken"))
         })
     }
 
