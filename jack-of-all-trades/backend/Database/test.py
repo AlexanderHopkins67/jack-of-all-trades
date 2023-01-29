@@ -1,4 +1,4 @@
-from database import session, User
+from players_database import session, User
 
 person = User("j649d", "Alex67", "bdasnjhd8w89uejwq")
 # session.add(person)
